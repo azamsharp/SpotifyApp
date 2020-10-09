@@ -1,7 +1,7 @@
 
 let temperatureDiv = document.getElementById("temperatureDiv")
 let weatherDataDiv = document.getElementById("weatherDataDiv")
-let currentLocationButton = document.getElementById("currentLocationButton")
+let currentLocationButton = document.getElementById("foo")
 
 currentLocationButton.addEventListener('click',function(){
 
@@ -11,9 +11,6 @@ currentLocationButton.addEventListener('click',function(){
     } else {
         navigator.geolocation.getCurrentPosition(function(position){
             console.log(position.coords.latitude)
-        }, function(){
-            // error 
-            console.log('Unable to find location...')
         })
     }
 
